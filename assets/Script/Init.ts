@@ -34,23 +34,23 @@ export default class NewClass extends cc.Component {
 
     onLoad () {
         let date = new Date();
-        this.year = date.getFullYear() - 999;
-        this.month = date.getMonth() - 1;
-        this.day = date.getDate();
+        this.year = date.getFullYear() - 999
+        this.month = date.getMonth() - 1
+        this.day = date.getDate()
 
-        this.updateDate();
+        this.updateDate()
     }
 
     onClickDate() {
-        let node = cc.instantiate(this.datePicker);
-        node.parent = this.node;
-        let datePicker:DatePicker = node.getComponent("DatePicker");
-        datePicker.setDate(this.year, this.month + 1, this.day);
+        let node = cc.instantiate(this.datePicker)
+        node.parent = this.node
+        let datePicker:DatePicker = node.getComponent("DatePicker")
+        datePicker.setDate(this.year, this.month, this.day)
         datePicker.setPickDateCallback((year, month, day)=>{
-            this.year = year;
-            this.month = month;
-            this.day = day;
-            this.updateDate();
+            this.year = year
+            this.month = month
+            this.day = day
+            this.updateDate()
         });
     }
 

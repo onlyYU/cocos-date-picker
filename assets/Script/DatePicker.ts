@@ -41,7 +41,7 @@ export default class DatePicker extends cc.Component {
      // 设置显示的日志，默认为当前日期
      setDate(year, month, day) {
         //传入的时间
-        this.date = new Date(year, month - 1, day);
+        this.date = new Date(year, month, day);
         //最小时间
         console.log();
         
