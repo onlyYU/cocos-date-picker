@@ -21,4 +21,4 @@ setTimePicker(){
 
   }
 
-![TimePicker](.\TimePicker.png)
+![TimePicker](https://github.com/onlyYU/cocos-date-picker/blob/master/TimePicker.png)
